@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9079813F221CDBA9002EA4E5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9079813E221CDBA9002EA4E5 /* StoreKit.framework */; };
 		9090FDCD212B743D0049D04B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090FDCC212B743D0049D04B /* AppDelegate.swift */; };
 		9090FDCF212B743D0049D04B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090FDCE212B743D0049D04B /* ViewController.swift */; };
 		9090FDD2212B743D0049D04B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9090FDD0212B743D0049D04B /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9079813E221CDBA9002EA4E5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9090FDC9212B743D0049D04B /* daily-dose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "daily-dose.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9090FDCC212B743D0049D04B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9090FDCE212B743D0049D04B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +31,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9079813F221CDBA9002EA4E5 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9079813D221CDBA9002EA4E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9079813E221CDBA9002EA4E5 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9090FDC0212B743D0049D04B = {
 			isa = PBXGroup;
 			children = (
 				9090FDCB212B743D0049D04B /* daily-dose */,
 				9090FDCA212B743D0049D04B /* Products */,
+				9079813D221CDBA9002EA4E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,11 @@
 				TargetAttributes = {
 					9090FDC8212B743D0049D04B = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -287,7 +304,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.specs.daily-dose";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ysl.daily-dose";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,7 +322,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.specs.daily-dose";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ysl.daily-dose";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
