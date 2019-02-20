@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="daily_dose" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="daily_dose" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJJ-RQ-okq">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="141"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGImage" translatesAutoresizingMaskIntoConstraints="NO" id="hax-fh-fE2">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="141"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kz4-s1-1lj">
-                                        <rect key="frame" x="120.5" y="28" width="134" height="30"/>
+                                        <rect key="frame" x="233" y="28" width="134" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAILY" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZh-au-9bU">
                                                 <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
@@ -54,29 +50,29 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoThumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="rmm-So-hkf">
-                                <rect key="frame" x="0.0" y="279" width="375" height="138"/>
+                                <rect key="frame" x="0.0" y="279" width="600" height="138"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="138" id="ZQl-dT-FQ2"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoThumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="TM8-ub-5XY">
-                                <rect key="frame" x="0.0" y="417" width="375" height="138"/>
+                                <rect key="frame" x="0.0" y="417" width="600" height="138"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="138" id="D6h-La-nrb"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHi-EH-tP8">
-                                <rect key="frame" x="0.0" y="555" width="375" height="112"/>
+                                <rect key="frame" x="0.0" y="555" width="600" height="45"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZ1-x8-nu5" customClass="GADBannerView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                                         <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="g9j-pa-AtW"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqx-GL-Oal">
-                                        <rect key="frame" x="0.0" y="50" width="375" height="62"/>
+                                        <rect key="frame" x="0.0" y="50" width="600" height="30"/>
                                         <color key="backgroundColor" red="0.32156862749999998" green="0.74117647060000003" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="REMOVE ADS">
@@ -96,7 +92,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoThumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="TPm-zM-7Ey">
-                                <rect key="frame" x="0.0" y="141" width="375" height="138"/>
+                                <rect key="frame" x="0.0" y="141" width="600" height="138"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="138" id="iuj-r4-wG6"/>
                                 </constraints>
